@@ -1,14 +1,18 @@
 package com.example;
 
 import java.util.function.Function;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 
 public class Items {
+  public static final Item HELMET_OF_THE_SEA = register("helmet_of_the_sea", Item::new, new Item.Properties());
+
   public static <T extends Item> T register(
       String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
     ResourceKey<Item> itemKey = ResourceKey.create(
@@ -22,6 +26,7 @@ public class Items {
   }
 
   public static void initialize() {
-    final Item HELMET_OF_THE_SEA = register("helmet_of_the_sea", Item::new, new Item.Properties());
+    ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT)
+        .register((itemGroup) -> itemGroup.accept(Items.HELMET_OF_THE_SEA));
   }
 }
