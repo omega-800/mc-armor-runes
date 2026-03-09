@@ -1,18 +1,18 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "mc_armor_runes",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Armor Runes",
+	"description": "Enhance your Armors and Tools with Runes! Get new effects and level them up. Every Vanilla Biome has an associated rune which can be crafted with Biome specific recources.",
 	"authors": [
-		"Me!"
+		"0mega, CaptainSwzzer"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/mc_armor_runes/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -23,7 +23,7 @@
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"modid.client.mixins.json",
 		{
 			"config": "modid.client.mixins.json",
 			"environment": "client"
