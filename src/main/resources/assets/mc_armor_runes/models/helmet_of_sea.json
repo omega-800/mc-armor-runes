@@ -1,0 +1,36 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "Helmet_Of_Sea",
+		"particle": "Helmet_Of_Sea"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 2],
+			"to": [12, 8, 10],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 2]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 4], "texture": "#2"},
+				"east": {"uv": [0, 4, 4, 8], "texture": "#2"},
+				"south": {"uv": [4, 0, 8, 4], "texture": "#2"},
+				"west": {"uv": [4, 4, 8, 8], "texture": "#2"},
+				"up": {"uv": [4, 12, 0, 8], "texture": "#2"},
+				"down": {"uv": [12, 0, 8, 4], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [81, 0, 0],
+			"translation": [-6, 8.25, 12.25],
+			"scale": [1.1, 1.1, 1.1]
+		},
+		"head": {
+			"translation": [0, 8.25, 4.25],
+			"scale": [2, 2, 2]
+		}
+	}
+}
