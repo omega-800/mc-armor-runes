@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"2": "Helmet_Of_Sea",
-		"particle": "Helmet_Of_Sea"
+		"2": "mc_armor_runes:item/helmet_of_sea",
+		"particle": "helmet_of_sea"
 	},
 	"elements": [
 		{
@@ -24,7 +24,7 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [0, 0, 0],
+			"rotation": [81, 0, 0],
 			"translation": [-6, 8.25, 12.25],
 			"scale": [1.1, 1.1, 1.1]
 		},
