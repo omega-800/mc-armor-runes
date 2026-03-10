@@ -11,22 +11,26 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 
 public class Items {
-  public static final Item HELMET_OF_THE_SEA = register("helmet_of_the_sea", Item::new, new Item.Properties());
+    public static final Item HELMET_OF_THE_SEA = register("helmet_of_the_sea", Item::new, new Item.Properties());
+    public static final Item HELMET_OF_SEA = register("helmet_of_sea", Item::new, new Item.Properties());
 
-  public static <T extends Item> T register(
-      String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
-    ResourceKey<Item> itemKey = ResourceKey.create(
-        Registries.ITEM, Identifier.fromNamespaceAndPath(ExampleMod.MOD_ID, name));
+    public static <T extends Item> T register(
+            String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
+        ResourceKey<Item> itemKey = ResourceKey.create(
+                Registries.ITEM, Identifier.fromNamespaceAndPath(ExampleMod.MOD_ID, name));
 
-    T item = itemFactory.apply(settings.setId(itemKey));
+        T item = itemFactory.apply(settings.setId(itemKey));
 
-    Registry.register(BuiltInRegistries.ITEM, itemKey, item);
+        Registry.register(BuiltInRegistries.ITEM, itemKey, item);
 
-    return item;
-  }
+        return item;
+    }
 
-  public static void initialize() {
-    ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT)
-        .register((itemGroup) -> itemGroup.accept(Items.HELMET_OF_THE_SEA));
-  }
+    public static void initialize() {
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT)
+                .register(itemGroup -> {
+                    itemGroup.accept(Items.HELMET_OF_THE_SEA);
+                    itemGroup.accept(Items.HELMET_OF_SEA);
+                });
+    }
 }
