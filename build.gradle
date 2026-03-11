@@ -22,7 +22,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"modid" {
+		"mc_armor_runes" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
