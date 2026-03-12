@@ -1,9 +1,14 @@
-{
-  "layers": {
-    "humanoid": [
-      {
-        "textures": "mc_armor_runes:/helmet_of_sea"
-      }
-    ]
+  {
+    "layers": {
+      "humanoid": [
+        {
+          "texture": "mc_armor_runes:/helmet_of_sea"
+        }
+      ],
+      "humanoid_leggings": [
+        {
+          "texture": "mc_armor_runes:/helmet_of_sea"
+        }
+      ]
+    }
   }
-}
