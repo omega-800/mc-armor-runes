@@ -10,6 +10,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.equipment.ArmorType;
+import org.jetbrains.annotations.NotNull;
 
 public class Items {
     public static final Item HELMET_OF_THE_SEA = register("helmet_of_the_sea", Item::new, new Item.Properties());
@@ -23,7 +24,7 @@ public class Items {
     );
     public static <T extends Item> T register(
             String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
-        ResourceKey<Item> itemKey = ResourceKey.create(
+        ResourceKey<@NotNull Item> itemKey = ResourceKey.create(
                 Registries.ITEM, Identifier.fromNamespaceAndPath(ExampleMod.MOD_ID, name));
 
         T item = itemFactory.apply(settings.setId(itemKey));
