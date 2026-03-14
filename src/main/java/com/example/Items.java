@@ -22,6 +22,21 @@ public class Items {
             new Item.Properties().humanoidArmor(GuiditeArmorMaterial.INSTANCE, ArmorType.HELMET)
                     .durability(ArmorType.HELMET.getDurability(GuiditeArmorMaterial.BASE_DURABILITY))
     );
+
+    public static final Item CHESTPLATE_OF_SEA = register(
+            "chestplate_of_sea",
+            Item::new,
+            new Item.Properties().humanoidArmor(GuiditeArmorMaterial.INSTANCE, ArmorType.CHESTPLATE)
+                    .durability(ArmorType.CHESTPLATE.getDurability(GuiditeArmorMaterial.BASE_DURABILITY))
+    );
+
+    public static final Item BOOTS_OF_SEA = register(
+            "boots_of_sea",
+            Item::new,
+            new Item.Properties().humanoidArmor(GuiditeArmorMaterial.INSTANCE, ArmorType.BOOTS)
+                    .durability(ArmorType.BOOTS.getDurability(GuiditeArmorMaterial.BASE_DURABILITY))
+    );
+
     public static <T extends Item> T register(
             String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
         ResourceKey<@NotNull Item> itemKey = ResourceKey.create(
@@ -40,6 +55,8 @@ public class Items {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT)
                 .register(itemGroup -> {
                     itemGroup.accept(Items.HELMET_OF_SEA);
+                    itemGroup.accept(Items.CHESTPLATE_OF_SEA);
+                    itemGroup.accept(Items.BOOTS_OF_SEA);
                     itemGroup.accept(Items.HELMET_OF_THE_SEA);
                 });
     }

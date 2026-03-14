@@ -20,9 +20,9 @@ public class GuiditeArmorMaterial {
 
 
     public static final TagKey<@NotNull Item> REPAIRS_GUIDITE_ARMOR = TagKey.create(BuiltInRegistries.ITEM.key(),
-            Identifier.fromNamespaceAndPath(ExampleMod.MOD_ID, "repairs_helmet_of_sea_armor"));
+            Identifier.fromNamespaceAndPath(ExampleMod.MOD_ID, "repairs_rune_of_sea_armor"));
     public static final ResourceKey<@NotNull EquipmentAsset> GUIDITE_ARMOR_MATERIAL_KEY = ResourceKey.create(EquipmentAssets.ROOT_ID,
-            Identifier.fromNamespaceAndPath(ExampleMod.MOD_ID, "helmet_of_sea"));
+            Identifier.fromNamespaceAndPath(ExampleMod.MOD_ID, "rune_of_sea_armor"));
     public static final ArmorMaterial INSTANCE = new ArmorMaterial(
             BASE_DURABILITY,
             Map.of(
