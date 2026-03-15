@@ -37,6 +37,14 @@ public class Items {
                     .durability(ArmorType.BOOTS.getDurability(GuiditeArmorMaterial.BASE_DURABILITY))
     );
 
+    public static final Item LEGGINGS_OF_SEA = register(
+            "leggings_of_sea",
+            Item::new,
+            new Item.Properties().humanoidArmor(GuiditeArmorMaterial.INSTANCE, ArmorType.LEGGINGS)
+                    .durability(ArmorType.LEGGINGS.getDurability(GuiditeArmorMaterial.BASE_DURABILITY))
+    );
+
+
     public static <T extends Item> T register(
             String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
         ResourceKey<@NotNull Item> itemKey = ResourceKey.create(
@@ -57,6 +65,7 @@ public class Items {
                     itemGroup.accept(Items.HELMET_OF_SEA);
                     itemGroup.accept(Items.CHESTPLATE_OF_SEA);
                     itemGroup.accept(Items.BOOTS_OF_SEA);
+                    itemGroup.accept(Items.LEGGINGS_OF_SEA);
                     itemGroup.accept(Items.HELMET_OF_THE_SEA);
                 });
     }
