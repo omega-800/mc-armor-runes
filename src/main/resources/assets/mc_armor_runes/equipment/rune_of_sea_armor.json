@@ -2,12 +2,12 @@
     "layers": {
       "humanoid": [
         {
-          "texture": "mc_armor_runes:/rune_of_sea_armor"
+          "texture": "mc_armor_runes:rune_of_sea_armor"
         }
       ],
       "humanoid_leggings": [
         {
-          "texture": "mc_armor_runes:/rune_of_sea_armor"
+          "texture": "mc_armor_runes:rune_of_sea_armor"
         }
       ]
     }
