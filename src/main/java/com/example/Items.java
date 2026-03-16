@@ -19,29 +19,29 @@ public class Items {
     public static final Item HELMET_OF_SEA = register(
             "helmet_of_sea",
             Item::new,
-            new Item.Properties().humanoidArmor(GuiditeArmorMaterial.INSTANCE, ArmorType.HELMET)
-                    .durability(ArmorType.HELMET.getDurability(GuiditeArmorMaterial.BASE_DURABILITY))
+            new Item.Properties().humanoidArmor(SeaArmorMaterial.INSTANCE, ArmorType.HELMET)
+                    .durability(ArmorType.HELMET.getDurability(SeaArmorMaterial.BASE_DURABILITY))
     );
 
     public static final Item CHESTPLATE_OF_SEA = register(
             "chestplate_of_sea",
             Item::new,
-            new Item.Properties().humanoidArmor(GuiditeArmorMaterial.INSTANCE, ArmorType.CHESTPLATE)
-                    .durability(ArmorType.CHESTPLATE.getDurability(GuiditeArmorMaterial.BASE_DURABILITY))
+            new Item.Properties().humanoidArmor(SeaArmorMaterial.INSTANCE, ArmorType.CHESTPLATE)
+                    .durability(ArmorType.CHESTPLATE.getDurability(SeaArmorMaterial.BASE_DURABILITY))
     );
 
     public static final Item BOOTS_OF_SEA = register(
             "boots_of_sea",
             Item::new,
-            new Item.Properties().humanoidArmor(GuiditeArmorMaterial.INSTANCE, ArmorType.BOOTS)
-                    .durability(ArmorType.BOOTS.getDurability(GuiditeArmorMaterial.BASE_DURABILITY))
+            new Item.Properties().humanoidArmor(SeaArmorMaterial.INSTANCE, ArmorType.BOOTS)
+                    .durability(ArmorType.BOOTS.getDurability(SeaArmorMaterial.BASE_DURABILITY))
     );
 
     public static final Item LEGGINGS_OF_SEA = register(
             "leggings_of_sea",
             Item::new,
-            new Item.Properties().humanoidArmor(GuiditeArmorMaterial.INSTANCE, ArmorType.LEGGINGS)
-                    .durability(ArmorType.LEGGINGS.getDurability(GuiditeArmorMaterial.BASE_DURABILITY))
+            new Item.Properties().humanoidArmor(SeaArmorMaterial.INSTANCE, ArmorType.LEGGINGS)
+                    .durability(ArmorType.LEGGINGS.getDurability(SeaArmorMaterial.BASE_DURABILITY))
     );
 
 
