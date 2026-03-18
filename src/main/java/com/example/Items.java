@@ -13,8 +13,7 @@ import net.minecraft.world.item.equipment.ArmorType;
 import org.jetbrains.annotations.NotNull;
 
 public class Items {
-    public static final Item HELMET_OF_THE_SEA = register("helmet_of_the_sea", Item::new, new Item.Properties());
-    //public static final Item HELMET_OF_SEA = register("helmet_of_sea", Item::new, new Item.Properties());
+
 
     public static final Item HELMET_OF_SEA = register(
             "helmet_of_sea",
@@ -45,6 +44,34 @@ public class Items {
     );
 
 
+
+    public static final Item HELMET_OF_WOODS = register(
+            "helmet_of_woods",
+            Item::new,
+            new Item.Properties().humanoidArmor(WoodsArmorMaterial.INSTANCE, ArmorType.HELMET)
+                    .durability(ArmorType.HELMET.getDurability(WoodsArmorMaterial.BASE_DURABILITY))
+    );
+
+    public static final Item CHESTPLATE_OF_WOODS = register(
+            "chestplate_of_woods",
+            Item::new,
+            new Item.Properties().humanoidArmor(WoodsArmorMaterial.INSTANCE, ArmorType.CHESTPLATE)
+                    .durability(ArmorType.CHESTPLATE.getDurability(WoodsArmorMaterial.BASE_DURABILITY))
+    );
+
+    public static final Item BOOTS_OF_WOODS = register(
+            "boots_of_woods",
+            Item::new,
+            new Item.Properties().humanoidArmor(WoodsArmorMaterial.INSTANCE, ArmorType.BOOTS)
+                    .durability(ArmorType.BOOTS.getDurability(WoodsArmorMaterial.BASE_DURABILITY))
+    );
+
+    public static final Item LEGGINGS_OF_WOODS = register(
+            "leggings_of_woods",
+            Item::new,
+            new Item.Properties().humanoidArmor(WoodsArmorMaterial.INSTANCE, ArmorType.LEGGINGS)
+                    .durability(ArmorType.LEGGINGS.getDurability(WoodsArmorMaterial.BASE_DURABILITY))
+    );
     public static <T extends Item> T register(
             String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
         ResourceKey<@NotNull Item> itemKey = ResourceKey.create(
@@ -66,7 +93,11 @@ public class Items {
                     itemGroup.accept(Items.CHESTPLATE_OF_SEA);
                     itemGroup.accept(Items.BOOTS_OF_SEA);
                     itemGroup.accept(Items.LEGGINGS_OF_SEA);
-                    itemGroup.accept(Items.HELMET_OF_THE_SEA);
+                    itemGroup.accept(Items.LEGGINGS_OF_WOODS);
+                    itemGroup.accept(Items.HELMET_OF_WOODS);
+                    itemGroup.accept(Items.CHESTPLATE_OF_WOODS);
+                    itemGroup.accept(Items.BOOTS_OF_WOODS);
+
                 });
     }
 }
