@@ -72,6 +72,9 @@ public class Items {
             new Item.Properties().humanoidArmor(WoodsArmorMaterial.INSTANCE, ArmorType.LEGGINGS)
                     .durability(ArmorType.LEGGINGS.getDurability(WoodsArmorMaterial.BASE_DURABILITY))
     );
+
+    public static final Item RUNE_OF_SEA = register("rune_of_sea", Item::new, new Item.Properties());
+
     public static <T extends Item> T register(
             String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
         ResourceKey<@NotNull Item> itemKey = ResourceKey.create(
@@ -89,6 +92,7 @@ public class Items {
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT)
                 .register(itemGroup -> {
+                    itemGroup.accept(Items.RUNE_OF_SEA);
                     itemGroup.accept(Items.HELMET_OF_SEA);
                     itemGroup.accept(Items.CHESTPLATE_OF_SEA);
                     itemGroup.accept(Items.BOOTS_OF_SEA);
