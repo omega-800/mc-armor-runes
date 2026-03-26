@@ -1,0 +1,15 @@
+
+  {
+    "layers": {
+      "humanoid": [
+        {
+          "texture": "mc_armor_runes:rune_of_woods_armor"
+        }
+      ],
+      "humanoid_leggings": [
+        {
+          "texture": "mc_armor_runes:rune_of_woods_armor"
+        }
+      ]
+    }
+  }
