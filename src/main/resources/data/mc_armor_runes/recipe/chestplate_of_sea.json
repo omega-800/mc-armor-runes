@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:diamond_chestplate",
+    [
+      "mc_armor_runes:rune_of_sea"
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "mc_armor_runes:chestplate_of_sea"
+  }
+}

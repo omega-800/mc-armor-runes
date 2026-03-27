@@ -19,7 +19,7 @@ public class ExampleMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-    Items.initialize();
+    ModItems.initialize();
 
 		LOGGER.info("Hello Fabric world!");
 	}

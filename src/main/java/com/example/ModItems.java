@@ -12,7 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.equipment.ArmorType;
 import org.jetbrains.annotations.NotNull;
 
-public class Items {
+public class ModItems {
 
 
     public static final Item HELMET_OF_SEA = register(
@@ -92,15 +92,15 @@ public class Items {
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT)
                 .register(itemGroup -> {
-                    itemGroup.accept(Items.RUNE_OF_SEA);
-                    itemGroup.accept(Items.HELMET_OF_SEA);
-                    itemGroup.accept(Items.CHESTPLATE_OF_SEA);
-                    itemGroup.accept(Items.BOOTS_OF_SEA);
-                    itemGroup.accept(Items.LEGGINGS_OF_SEA);
-                    itemGroup.accept(Items.LEGGINGS_OF_WOODS);
-                    itemGroup.accept(Items.HELMET_OF_WOODS);
-                    itemGroup.accept(Items.CHESTPLATE_OF_WOODS);
-                    itemGroup.accept(Items.BOOTS_OF_WOODS);
+                    itemGroup.accept(ModItems.RUNE_OF_SEA);
+                    itemGroup.accept(ModItems.HELMET_OF_SEA);
+                    itemGroup.accept(ModItems.CHESTPLATE_OF_SEA);
+                    itemGroup.accept(ModItems.BOOTS_OF_SEA);
+                    itemGroup.accept(ModItems.LEGGINGS_OF_SEA);
+                    itemGroup.accept(ModItems.LEGGINGS_OF_WOODS);
+                    itemGroup.accept(ModItems.HELMET_OF_WOODS);
+                    itemGroup.accept(ModItems.CHESTPLATE_OF_WOODS);
+                    itemGroup.accept(ModItems.BOOTS_OF_WOODS);
 
                 });
     }

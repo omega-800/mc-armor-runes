@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:prismarine_shard",
+    "$": "minecraft:heart_of_the_sea",
+    "?": "minecraft:amethyst_shard",
+    "%": "minecraft:dark_prismarine"
+  },
+  "pattern": [
+    "#$#",
+    "?%?"
+
+  ],
+  "result": {
+    "count": 1,
+    "id": "mc_armor_runes:rune_of_sea"
+  }
+}
