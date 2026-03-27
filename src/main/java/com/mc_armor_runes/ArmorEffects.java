@@ -39,13 +39,15 @@ public class ArmorEffects {
             }
             {
                 if (seaArmorPieces >= 1) {
-                    player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 220, 0, false, false));
-                }
-                if (seaArmorPieces >= 2) {
                     player.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 220, 0, false, false));
                 }
+
+                if (seaArmorPieces >= 2) {
+                    player.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 220, 0, false, false));
+                }
                 if (seaArmorPieces == 4) {
-                    player.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 220, 0, false, false));
+                    player.addEffect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 220, 0, false, false));
+
                 }
             }
         }
