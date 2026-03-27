@@ -41,7 +41,6 @@ public class ArmorEffects {
                 if (seaArmorPieces >= 1) {
                     player.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 220, 0, false, false));
                 }
-
                 if (seaArmorPieces >= 2) {
                     player.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 220, 0, false, false));
                 }
