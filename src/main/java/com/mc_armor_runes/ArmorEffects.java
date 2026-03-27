@@ -49,6 +49,7 @@ public class ArmorEffects {
                 if (seaArmorPieces == 4) {
                     player.addEffect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 220, 0, false, false));
 
+
                 }
             }
         }
