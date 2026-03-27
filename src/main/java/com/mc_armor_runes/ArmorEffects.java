@@ -3,8 +3,10 @@ package com.mc_armor_runes;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AnvilMenu;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -23,41 +25,33 @@ import com.mc_armor_runes.ModItems;
 
 public class ArmorEffects {
 
-    public static void registerTick(MinecraftServer server) {
-        ServerTickEvents.START_SERVER_TICK.register(s -> {
-            for (Player player : s.getPlayerList().getPlayers()) {
-                applySeaArmorEffects(player);
-            }
-        });
-    }
-
     public static void applySeaArmorEffects(Player player) {
         int seaArmorPieces = 0;
 
-
-
-        for (ItemStack armorPiece : player.getInventory()) {
-            if (armorPiece.getItem() == ModItems.HELMET_OF_SEA
-                    || armorPiece.getItem() == ModItems.BOOTS_OF_SEA
-                    || armorPiece.getItem() == ModItems.CHESTPLATE_OF_SEA
-                    || armorPiece.getItem() == ModItems.LEGGINGS_OF_SEA)
-
-                seaArmorPieces++;
-        }
-
-        {
-            if (seaArmorPieces >= 1) {
-                player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 220, 0));
+        for (EquipmentSlot slot : EquipmentSlot.values()) {
+            if (slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR) {
+                ItemStack armorPiece = player.getItemBySlot(slot);
+                if (armorPiece.getItem() == ModItems.HELMET_OF_SEA
+                        || armorPiece.getItem() == ModItems.BOOTS_OF_SEA
+                        || armorPiece.getItem() == ModItems.CHESTPLATE_OF_SEA
+                        || armorPiece.getItem() == ModItems.LEGGINGS_OF_SEA)
+                    seaArmorPieces++;
             }
-            if (seaArmorPieces >= 2) {
-                player.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 220, 0));
-            }
-            if (seaArmorPieces == 4) {
-                player.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 220, 0));
+            {
+                if (seaArmorPieces >= 1) {
+                    player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 220, 0, false, false));
+                }
+                if (seaArmorPieces >= 2) {
+                    player.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 220, 0, false, false));
+                }
+                if (seaArmorPieces == 4) {
+                    player.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 220, 0, false, false));
+                }
             }
         }
     }
 }
+
 
 
 

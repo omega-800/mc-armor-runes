@@ -1,26 +1,30 @@
 package com.mc_armor_runes;
 
 import net.fabricmc.api.ModInitializer;
-
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ServerPlayer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ExampleMod implements ModInitializer {
-	public static final String MOD_ID = "mc_armor_runes";
+    public static final String MOD_ID = "mc_armor_runes";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    @Override
+    public void onInitialize() {
+        // Register items
+        ModItems.initialize();
 
-	@Override
-	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+        // Register server tick event
+        ServerTickEvents.END_SERVER_TICK.register(this::onServerTick);
 
-    ModItems.initialize();
+        LOGGER.info("MC Armor Runes initialized!");
+    }
 
-		LOGGER.info("Hello Fabric world!");
-	}
+    private void onServerTick(MinecraftServer server) {
+        for (ServerPlayer player : server.getPlayerList().getPlayers()) {
+            ArmorEffects.applySeaArmorEffects(player);
+        }
+    }
 }
