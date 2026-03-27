@@ -1,4 +1,4 @@
-package com.example;
+package com.mc_armor_runes;
 
 import net.fabricmc.api.ModInitializer;
 

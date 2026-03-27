@@ -1,4 +1,4 @@
-package com.example;
+package com.mc_armor_runes;
 
 import java.util.function.Function;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;

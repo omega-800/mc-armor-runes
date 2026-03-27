@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.example.mixin",
+  "package": "com.mc_armor_runes.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
   ],

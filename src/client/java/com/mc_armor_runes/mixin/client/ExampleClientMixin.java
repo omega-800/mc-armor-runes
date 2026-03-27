@@ -1,4 +1,4 @@
-package com.example.mixin.client;
+package com.mc_armor_runes.mixin.client;
 
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;
