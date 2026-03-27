@@ -27,6 +27,7 @@ public class ArmorEffects {
 
     public static void applySeaArmorEffects(Player player) {
         int seaArmorPieces = 0;
+        int woodArmorPieces = 0;
 
         for (EquipmentSlot slot : EquipmentSlot.values()) {
             if (slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR) {
@@ -36,6 +37,7 @@ public class ArmorEffects {
                         || armorPiece.getItem() == ModItems.CHESTPLATE_OF_SEA
                         || armorPiece.getItem() == ModItems.LEGGINGS_OF_SEA)
                     seaArmorPieces++;
+
             }
             {
                 if (seaArmorPieces >= 1) {
