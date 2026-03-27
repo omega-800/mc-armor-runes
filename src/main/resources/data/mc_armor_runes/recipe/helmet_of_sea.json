@@ -4,7 +4,7 @@
   "key": {
     "#": "minecraft:amethyst_shard",
     "$": "mc_armor_runes:rune_of_sea",
-    "?": "minecraft:diamond_chestplate"
+    "?": "minecraft:diamond_helmet"
 
   },
   "pattern": [
@@ -14,6 +14,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "mc_armor_runes:chestplate_of_sea"
+    "id": "mc_armor_runes:helmet_of_sea"
   }
 }

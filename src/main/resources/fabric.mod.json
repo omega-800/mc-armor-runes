@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.mc_armor_runes.ExampleMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.mc_armor_runes.ExampleModClient"
 		]
 	},
 
