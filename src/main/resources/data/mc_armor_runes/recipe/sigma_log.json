@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "",
+  "group": "sigma_log",
+  "ingredients": [
+    "minecraft:oak_log",
+    "minecraft:spruce_log",
+    "minecraft:birch_log",
+    "minecraft:acacia_log",
+    "minecraft:dark_oak_log",
+    "minecraft:jungle_log",
+    "minecraft:pale_oak_log",
+    "minecraft:cherry_log",
+    "minecraft:mangrove_log"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mc_armor_runes:sigma_log"
+  }
+}
