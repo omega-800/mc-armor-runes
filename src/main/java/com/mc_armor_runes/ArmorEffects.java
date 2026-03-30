@@ -68,15 +68,15 @@ public class ArmorEffects {
 
     if (biome.is(BiomeTags.IS_FOREST)) {
             if (woodArmorPieces >= 1) {
-                player.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 220, 0, false, false));
+                player.addEffect(new MobEffectInstance(MobEffects.SATURATION, 220, 0, false, false));
             }
 
             if (woodArmorPieces >= 2) {
-                player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 220, 0, false, false));
+                player.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 220, 0, false, false));
             }
 
             if (woodArmorPieces == 4) {
-                player.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 220, 0, false, false));
+                player.addEffect(new MobEffectInstance(MobEffects.REGENERATION,220, 0, false, false));
             }
 
         }
