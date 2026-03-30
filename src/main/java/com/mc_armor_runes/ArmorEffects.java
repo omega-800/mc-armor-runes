@@ -27,7 +27,7 @@ public class ArmorEffects {
 
     public static void applySeaArmorEffects(Player player) {
         int seaArmorPieces = 0;
-        int woodArmorPieces = 0;
+        int woodArmorPieces8ikujh = 0;
 
         for (EquipmentSlot slot : EquipmentSlot.values()) {
             if (slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR) {
