@@ -25,6 +25,7 @@ public class ExampleMod implements ModInitializer {
     private void onServerTick(MinecraftServer server) {
         for (ServerPlayer player : server.getPlayerList().getPlayers()) {
             ArmorEffects.applySeaArmorEffects(player);
+            ArmorEffects.applyWoodArmorEffects(player);
         }
     }
 }
