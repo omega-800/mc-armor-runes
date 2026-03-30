@@ -74,6 +74,8 @@ public class ModItems {
     );
 
     public static final Item RUNE_OF_SEA = register("rune_of_sea", Item::new, new Item.Properties());
+    public static final Item RUNE_OF_WOODS = register("rune_of_woods", Item::new, new Item.Properties());
+    public static final Item HEART_OF_THE_FOREST= register("heart_of_the_forest", Item::new, new Item.Properties());
 
     public static <T extends Item> T register(
             String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
@@ -92,7 +94,6 @@ public class ModItems {
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT)
                 .register(itemGroup -> {
-                    itemGroup.accept(ModItems.RUNE_OF_SEA);
                     itemGroup.accept(ModItems.HELMET_OF_SEA);
                     itemGroup.accept(ModItems.CHESTPLATE_OF_SEA);
                     itemGroup.accept(ModItems.BOOTS_OF_SEA);
@@ -102,8 +103,17 @@ public class ModItems {
                     itemGroup.accept(ModItems.CHESTPLATE_OF_WOODS);
                     itemGroup.accept(ModItems.BOOTS_OF_WOODS);
 
+
+                });
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.INGREDIENTS)
+                .register(itemGroup -> {
+                    itemGroup.accept(ModItems.HEART_OF_THE_FOREST);
+                    itemGroup.accept(ModItems.RUNE_OF_SEA);
+                    itemGroup.accept(ModItems.RUNE_OF_WOODS);
                 });
     }
+
+
 }
 
 //                    itemGroup.accept(Items.HELMET_OF_THE_SEA)

@@ -1,0 +1,20 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:amethyst_shard",
+    "$": "mc_armor_runes:rune_of_woods",
+    "?": "minecraft:diamond_helmet"
+
+  },
+  "pattern": [
+    "#$#",
+    " ? "
+
+  ],
+  "result": {
+    "count": 1,
+    "id": "mc_armor_runes:helmet_of_woods"
+  }
+}

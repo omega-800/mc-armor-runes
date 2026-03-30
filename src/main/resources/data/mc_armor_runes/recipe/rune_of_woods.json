@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:gold_nugget",
+    "$": "mc_armor_runes:heart_of_the_forest",
+    "?": "minecraft:oak_log",
+    "%": "minecraft:creaking_heart"
+  },
+  "pattern": [
+    "#$#",
+    "?%?"
+
+  ],
+  "result": {
+    "count": 1,
+    "id": "mc_armor_runes:rune_of_woods"
+  }
+}
