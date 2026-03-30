@@ -57,13 +57,16 @@ public class ArmorEffects {
             if (slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR) {
                 ItemStack armorPiece = player.getItemBySlot(slot);
                 if (armorPiece.getItem() == ModItems.HELMET_OF_WOODS
-                        || armorPiece.getItem() == ModItems.BOOTS_OF_WOODS || armorPiece.getItem() == ModItems.CHESTPLATE_OF_SEA
+                        || armorPiece.getItem() == ModItems.BOOTS_OF_WOODS
                         || armorPiece.getItem() == ModItems.LEGGINGS_OF_WOODS
                         || armorPiece.getItem() == ModItems.CHESTPLATE_OF_WOODS)
                     woodArmorPieces++;
             }
         }
-        if (isForest(biome)) {
+
+        Holder<Biome> biome = player.level().getBiome(player.blockPosition());
+
+    if (biome.is(BiomeTags.IS_FOREST)) {
             if (woodArmorPieces >= 1) {
                 player.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 220, 0, false, false));
             }
@@ -80,10 +83,7 @@ public class ArmorEffects {
 
     }
 
-    private static boolean isForest(Holder<@NotNull Biome> biome) {
-        return biome.is(BiomeTags.IS_FOREST);
 
-    }
 }
 
 
