@@ -14,6 +14,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class ModItems {
 
+//SEA ARMOR ITEMS:
 
     public static final Item HELMET_OF_SEA = register(
             "helmet_of_sea",
@@ -43,7 +44,7 @@ public class ModItems {
                     .durability(ArmorType.LEGGINGS.getDurability(SeaArmorMaterial.BASE_DURABILITY))
     );
 
-
+    //WOODS ARMOR ITEMS:
 
     public static final Item HELMET_OF_WOODS = register(
             "helmet_of_woods",
@@ -73,11 +74,14 @@ public class ModItems {
                     .durability(ArmorType.LEGGINGS.getDurability(WoodsArmorMaterial.BASE_DURABILITY))
     );
 
+    //RUNES AND HEARTS:
+
     public static final Item RUNE_OF_SEA = register("rune_of_sea", Item::new, new Item.Properties());
     public static final Item RUNE_OF_WOODS = register("rune_of_woods", Item::new, new Item.Properties());
     public static final Item HEART_OF_THE_FOREST= register("heart_of_the_forest", Item::new, new Item.Properties());
     public static final Item SIGMA_LOG= register("sigma_log", Item::new, new Item.Properties());
 
+    //ITEM REGISTERER:
     public static <T extends Item> T register(
             String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
         ResourceKey<@NotNull Item> itemKey = ResourceKey.create(
@@ -91,7 +95,7 @@ public class ModItems {
     }
 
 
-
+//REGISTRATION OF ALL ITEMS:
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT)
                 .register(itemGroup -> {

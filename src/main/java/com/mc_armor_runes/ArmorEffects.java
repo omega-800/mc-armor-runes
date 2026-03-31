@@ -32,7 +32,6 @@ public class ArmorEffects {
                         || armorPiece.getItem() == ModItems.CHESTPLATE_OF_SEA
                         || armorPiece.getItem() == ModItems.LEGGINGS_OF_SEA)
                     seaArmorPieces++;
-
             }
             {
                 if (seaArmorPieces >= 1) {
@@ -43,20 +42,19 @@ public class ArmorEffects {
                 }
                 if (seaArmorPieces == 4) {
                     player.addEffect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 220, 0, false, false));
-
-
                 }
             }
         }
     }
 
+    //WOOD ARMOR EFFECTS:
     public static void applyWoodArmorEffects(Player player) {
         int woodArmorPieces = 0;
 
-        for (EquipmentSlot slot : EquipmentSlot.values()) {
-            if (slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR) {
-                ItemStack armorPiece = player.getItemBySlot(slot);
-                if (armorPiece.getItem() == ModItems.HELMET_OF_WOODS
+        for (EquipmentSlot slot : EquipmentSlot.values()) { //Creates variable slot to loop through values of EquipmentSlot
+            if (slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR) { //Checks Slot Type for HUMANOID_ARMOR
+                ItemStack armorPiece = player.getItemBySlot(slot); //Creates Variable armorPiece and compares to worn Items.
+                if (armorPiece.getItem() == ModItems.HELMET_OF_WOODS //
                         || armorPiece.getItem() == ModItems.BOOTS_OF_WOODS
                         || armorPiece.getItem() == ModItems.LEGGINGS_OF_WOODS
                         || armorPiece.getItem() == ModItems.CHESTPLATE_OF_WOODS)
@@ -64,7 +62,7 @@ public class ArmorEffects {
             }
         }
 
-        Holder<Biome> biome = player.level().getBiome(player.blockPosition());
+        Holder<Biome> biome = player.level().getBiome(player.blockPosition()); //Checking Players Position
 
     if (biome.is(BiomeTags.IS_FOREST)) {
             if (woodArmorPieces >= 1) {
@@ -78,12 +76,8 @@ public class ArmorEffects {
             if (woodArmorPieces == 4) {
                 player.addEffect(new MobEffectInstance(MobEffects.REGENERATION,220, 0, false, false));
             }
-
         }
-
     }
-
-
 }
 
 

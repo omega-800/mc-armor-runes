@@ -22,6 +22,7 @@ public class ExampleMod implements ModInitializer {
         LOGGER.info("MC Armor Runes initialized!");
     }
 
+    //Checks Server Ticks and calls Method on Tick.
     private void onServerTick(MinecraftServer server) {
         for (ServerPlayer player : server.getPlayerList().getPlayers()) {
             ArmorEffects.applySeaArmorEffects(player);
