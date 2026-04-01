@@ -80,7 +80,8 @@ public class ModItems {
     public static final Item RUNE_OF_WOODS = register("rune_of_woods", Item::new, new Item.Properties());
     public static final Item HEART_OF_THE_FOREST= register("heart_of_the_forest", Item::new, new Item.Properties());
     public static final Item SIGMA_LOG= register("sigma_log", Item::new, new Item.Properties());
-
+    public static final Item RUNE_OF_END = register("rune_of_end", Item::new, new Item.Properties());
+    public static final Item ENDER_HEART = register("ender_heart", Item::new, new Item.Properties());
     //ITEM REGISTERER:
     public static <T extends Item> T register(
             String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
@@ -115,7 +116,8 @@ public class ModItems {
                     itemGroup.accept(ModItems.HEART_OF_THE_FOREST);
                     itemGroup.accept(ModItems.RUNE_OF_SEA);
                     itemGroup.accept(ModItems.RUNE_OF_WOODS);
-
+                    itemGroup.accept(ModItems.RUNE_OF_END);
+                    itemGroup.accept(ModItems.ENDER_HEART);
                 });
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.BUILDING_BLOCKS)
                 .register(itemGroup -> {

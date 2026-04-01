@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:ender_eye",
+    "$": "mc_armor_runes:ender_heart",
+    "?": "minecraft:obsidian",
+    "%": "minecraft:shulker_shell"
+  },
+  "pattern": [
+    "#$#",
+    "?%?"
+
+  ],
+  "result": {
+    "count": 1,
+    "id": "mc_armor_runes:rune_of_end"
+  }
+}
