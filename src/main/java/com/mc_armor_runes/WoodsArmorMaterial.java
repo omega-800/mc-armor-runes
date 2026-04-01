@@ -16,7 +16,7 @@ import java.util.Map;
 
 
 public class WoodsArmorMaterial {
-    public static final int BASE_DURABILITY = 15;
+    public static final int BASE_DURABILITY = 592;
 
 
     public static final TagKey<@NotNull Item> REPAIRS_WOODS_ARMOR = TagKey.create(BuiltInRegistries.ITEM.key(),

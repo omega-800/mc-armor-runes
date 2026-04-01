@@ -16,7 +16,7 @@ import java.util.Map;
 
 
 public class SeaArmorMaterial {
-    public static final int BASE_DURABILITY = 15;
+    public static final int BASE_DURABILITY = 692;
 
 
     public static final TagKey<@NotNull Item> REPAIRS_SEA_ARMOR = TagKey.create(BuiltInRegistries.ITEM.key(),
