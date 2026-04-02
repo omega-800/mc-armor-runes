@@ -1,7 +1,6 @@
 plugins {
 	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
 	id 'maven-publish'
-    id 'net.fabricmc.fabric-data-gen' version '0.10.101'
 }
 
 version = project.mod_version
