@@ -5,7 +5,7 @@
     "#": "minecraft:ender_eye",
     "$": "mc_armor_runes:ender_heart",
     "?": "minecraft:obsidian",
-    "%": "minecraft:end_crystal"
+    "%": "minecraft:ender_crystal"
   },
   "pattern": [
     "#$#",
