@@ -1,35 +1,38 @@
 {
-	"schemaVersion": 1,
-	"id": "mc_armor_runes",
-	"version": "${version}",
-	"name": "Armor Runes",
-	"description": "Enhance your Armors and Tools with Runes! Get new effects and level them up. Every Vanilla Biome has an associated rune which can be crafted with Biome specific recources.",
-	"authors": [
-		"omega, CaptainSwzzer"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/mc_armor_runes/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.mc_armor_runes.ExampleMod"
-		],
-		"client": [
-			"com.mc_armor_runes.ExampleModClient"
-		]
-	},
+  "schemaVersion": 1,
+  "id": "mc_armor_runes",
+  "version": "${version}",
+  "name": "Armor Runes",
+  "description": "Enhance your Armors and Tools with Runes! Get new effects and level them up. Every Vanilla Biome has an associated rune which can be crafted with Biome specific recources.",
+  "authors": [
+    "omega, CaptainSwzzer"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/mc_armor_runes/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mc_armor_runes.ExampleMod"
+    ],
+    "client": [
+      "com.mc_armor_runes.ExampleModClient"
+    ],
+    "fabric-datagen": [
+      "com.mc_armor_runes.ModDataGenerator"
+    ]
 
-	"depends": {
-		"fabricloader": ">=0.18.2",
-		"minecraft": "~1.21.11",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  },
+  "depends": {
+    "fabricloader": ">=0.18.2",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
 }
