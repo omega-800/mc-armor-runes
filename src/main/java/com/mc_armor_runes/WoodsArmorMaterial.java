@@ -16,7 +16,7 @@ import java.util.Map;
 
 
 public class WoodsArmorMaterial {
-    public static final int BASE_DURABILITY = 15;
+    public static final int BASE_DURABILITY = 38;
 
 
     public static final TagKey<@NotNull Item> REPAIRS_WOODS_ARMOR = TagKey.create(BuiltInRegistries.ITEM.key(),
@@ -26,10 +26,11 @@ public class WoodsArmorMaterial {
     public static final ArmorMaterial INSTANCE = new ArmorMaterial(
             BASE_DURABILITY,
             Map.of(
-                    ArmorType.HELMET, 3,
-                    ArmorType.CHESTPLATE, 7,
+                    ArmorType.HELMET, 4,
+                    ArmorType.CHESTPLATE, 9,
                     ArmorType.LEGGINGS, 6,
-                    ArmorType.BOOTS, 3
+                    ArmorType.BOOTS, 3,
+                    ArmorType.BODY, 12
             ),
             5,
             SoundEvents.ARMOR_EQUIP_IRON,

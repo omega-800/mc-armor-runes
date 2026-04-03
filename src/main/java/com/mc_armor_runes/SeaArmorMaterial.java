@@ -16,7 +16,7 @@ import java.util.Map;
 
 
 public class SeaArmorMaterial {
-    public static final int BASE_DURABILITY = 15;
+    public static final int BASE_DURABILITY = 39;
 
 
     public static final TagKey<@NotNull Item> REPAIRS_SEA_ARMOR = TagKey.create(BuiltInRegistries.ITEM.key(),
@@ -26,10 +26,11 @@ public class SeaArmorMaterial {
     public static final ArmorMaterial INSTANCE = new ArmorMaterial(
             BASE_DURABILITY,
             Map.of(
-                    ArmorType.HELMET, 3,
-                    ArmorType.CHESTPLATE, 8,
-                    ArmorType.LEGGINGS, 6,
-                    ArmorType.BOOTS, 3
+                    ArmorType.HELMET, 4,
+                    ArmorType.CHESTPLATE, 9,
+                    ArmorType.LEGGINGS, 7,
+                    ArmorType.BOOTS, 4,
+                    ArmorType.BODY, 11
             ),
             5,
             SoundEvents.ARMOR_EQUIP_IRON,

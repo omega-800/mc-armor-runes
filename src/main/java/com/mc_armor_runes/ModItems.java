@@ -74,6 +74,36 @@ public class ModItems {
                     .durability(ArmorType.LEGGINGS.getDurability(WoodsArmorMaterial.BASE_DURABILITY))
     );
 
+    //END ARMOR ITEMS:
+
+    public static final Item HELMET_OF_END = register(
+            "helmet_of_end",
+            Item::new,
+            new Item.Properties().humanoidArmor(EndArmorMaterial.INSTANCE, ArmorType.HELMET)
+                    .durability(ArmorType.HELMET.getDurability(EndArmorMaterial.BASE_DURABILITY))
+    );
+
+    public static final Item BOOTS_OF_END = register(
+            "boots_of_end",
+            Item::new,
+            new Item.Properties().humanoidArmor(EndArmorMaterial.INSTANCE, ArmorType.BOOTS)
+                    .durability(ArmorType.BOOTS.getDurability(EndArmorMaterial.BASE_DURABILITY))
+    );
+
+    public static final Item CHESTPLATE_OF_END = register(
+            "chestplate_of_end",
+            Item::new,
+            new Item.Properties().humanoidArmor(EndArmorMaterial.INSTANCE, ArmorType.CHESTPLATE)
+                    .durability(ArmorType.CHESTPLATE.getDurability(EndArmorMaterial.BASE_DURABILITY))
+    );
+
+    public static final Item LEGGINGS_OF_END = register(
+            "leggings_of_end",
+            Item::new,
+            new Item.Properties().humanoidArmor(EndArmorMaterial.INSTANCE, ArmorType.LEGGINGS)
+                    .durability(ArmorType.LEGGINGS.getDurability(EndArmorMaterial.BASE_DURABILITY))
+    );
+
     //RUNES AND HEARTS:
 
     public static final Item RUNE_OF_SEA = register("rune_of_sea", Item::new, new Item.Properties());
@@ -109,6 +139,10 @@ public class ModItems {
                     itemGroup.accept(ModItems.HELMET_OF_WOODS);
                     itemGroup.accept(ModItems.CHESTPLATE_OF_WOODS);
                     itemGroup.accept(ModItems.BOOTS_OF_WOODS);
+                    itemGroup.accept(ModItems.LEGGINGS_OF_END);
+                    itemGroup.accept(ModItems.HELMET_OF_END);
+                    itemGroup.accept(ModItems.CHESTPLATE_OF_END);
+                    itemGroup.accept(ModItems.BOOTS_OF_END);
 
 
                 });

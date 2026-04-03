@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.logging.Level;
 
 public class EndArmorMaterial {
-    public static final int BASE_DURABILITY = 1184;
+    public static final int BASE_DURABILITY = 43;
 
 
     public static final TagKey<@NotNull Item> REPAIRS_END_ARMOR = TagKey.create(BuiltInRegistries.ITEM.key(),
@@ -31,15 +31,16 @@ public class EndArmorMaterial {
     public static final ArmorMaterial INSTANCE = new ArmorMaterial(
             BASE_DURABILITY,
             Map.of(
-                    ArmorType.HELMET, 5,
-                    ArmorType.CHESTPLATE, 9,
-                    ArmorType.LEGGINGS, 8,
-                    ArmorType.BOOTS, 5
+                    ArmorType.HELMET, 6,
+                    ArmorType.CHESTPLATE, 12,
+                    ArmorType.LEGGINGS, 10,
+                    ArmorType.BOOTS, 7,
+                    ArmorType.BODY, 13
             ),
             5,
             SoundEvents.ARMOR_EQUIP_IRON,
-            0.0F,
-            0.0F,
+            4.0F,
+            0.3F,
             REPAIRS_END_ARMOR,
             END_ARMOR_MATERIAL_KEY
     );
