@@ -1,12 +1,13 @@
 {
   "type": "minecraft:entity",
+  "random_sequence": "minecraft:entities/ender_dragon",
   "pools": [
     {
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "mc_armor_runes:enderdragon_scales"
+          "name": "mc_armor_runes:ender_dragon_scales"
         }
       ],
       "rolls": {

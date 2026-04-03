@@ -1,2 +1,4 @@
 // 1.21.11	-999999999-01-01T00:00:00	Armor Runes/Entity Loot Tables
-fe29be07e45e8b04580945d23891fb7009cdddd5 data/minecraft/loot_table/entities/sheep.json
+fe29be07e45e8b04580945d23891fb7009cdddd5 data/minecraft/loot_table/entities/ender_dragon.json
+d78d274bec0d347863906b9ae1135f8561664a77 data/minecraft/loot_table/entities/enderman.json
+fe29be07e45e8b04580945d23891fb7009cdddd5 data/minecraft/loot_table/entities/skeleton.json

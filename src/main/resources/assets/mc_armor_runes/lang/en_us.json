@@ -1,16 +1,19 @@
 {
-  "item.mc_armor_runes.helmet_of_sea": "Helmet of Sea",
-  "item.mc_armor_runes.chestplate_of_sea": "Chestplate of Sea",
-  "item.mc_armor_runes.boots_of_sea": "Boots of Sea",
-  "item.mc_armor_runes.leggings_of_sea": "Leggings of Sea",
+  "item.mc_armor_runes.helmet_of_sea": "Helmet of the Sea",
+  "item.mc_armor_runes.chestplate_of_sea": "Chestplate of the Sea",
+  "item.mc_armor_runes.boots_of_sea": "Boots of the Sea",
+  "item.mc_armor_runes.leggings_of_sea": "Leggings of the Sea",
 
-  "item.mc_armor_runes.helmet_of_woods": "Helmet of Woods",
-  "item.mc_armor_runes.chestplate_of_woods": "Chestplate of Woods",
-  "item.mc_armor_runes.boots_of_woods": "Boots of Woods",
-  "item.mc_armor_runes.leggings_of_woods": "Leggings of Woods",
+  "item.mc_armor_runes.helmet_of_woods": "Helmet of the Forest",
+  "item.mc_armor_runes.chestplate_of_woods": "Chestplate of Forest",
+  "item.mc_armor_runes.boots_of_woods": "Boots of the Forest",
+  "item.mc_armor_runes.leggings_of_woods": "Leggings of Forest",
 
-  "item.mc_armor_runes.rune_of_sea": "Rune of Sea",
-  "item.mc_armor_runes.rune_of_woods": "Rune of Woods",
+  "item.mc_armor_runes.rune_of_sea": "Rune of the Sea",
+  "item.mc_armor_runes.rune_of_woods": "Rune of the Forest",
+  "item.mc_armor_runes.rune_of_end": "Rune of the End",
   "item.mc_armor_runes.heart_of_the_forest": "Heart of the Forest",
-  "item.mc_armor_runes.sigma_log": "The Sigma prime ultra Log"
+  "item.mc_armor_runes.sigma_log": "The Sigma prime ultra Log",
+
+  "item.mc_armor_runes.ender_dragon_scales": "Ender Dragon Scales"
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures" : {
+    "layer0": "mc_armor_runes:item/ender_dragon_scales"
+  }
+}
+

@@ -22,13 +22,21 @@ public class ModEntityLootTableProvider extends FabricEntityLootTableProvider {
 
     @Override
     public void generate() {
-        add(EntityType.SHEEP, LootTable.lootTable().withPool(LootPool.lootPool()
+        add(EntityType.ENDER_DRAGON, LootTable.lootTable().withPool(LootPool.lootPool()
                 .setRolls(UniformGenerator.between(6.0f, 8.0f))
-                .add(LootItem.lootTableItem(ModItems.ENDERDRAGON_SCALES)))
+                .add(LootItem.lootTableItem(ModItems.ENDER_DRAGON_SCALES)))
 
         );
+        add(EntityType.ENDERMAN, LootTable.lootTable().withPool(LootPool.lootPool()
+                .setRolls(UniformGenerator.between(1.0f, 1.0f))
+                .add(LootItem.lootTableItem(ModItems.ENDER_HEART)))
 
+        );
+        add(EntityType.SKELETON, LootTable.lootTable().withPool(LootPool.lootPool()
+                .setRolls(UniformGenerator.between(6.0f, 8.0f))
+                .add(LootItem.lootTableItem(ModItems.ENDER_DRAGON_SCALES)))
 
+        );
     }
 
 }
