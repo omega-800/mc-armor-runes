@@ -15,5 +15,13 @@
   "item.mc_armor_runes.heart_of_the_forest": "Heart of the Forest",
   "item.mc_armor_runes.sigma_log": "The Sigma prime ultra Log",
 
-  "item.mc_armor_runes.ender_dragon_scales": "Ender Dragon Scales"
+  "item.mc_armor_runes.helmet_of_end": "Helmet of the End",
+  "item.mc_armor_runes.chestplate_of_end": "Chestplate of the End",
+  "item.mc_armor_runes.boots_of_end": "Boots of the End",
+  "item.mc_armor_runes.leggings_of_end": "Leggings of the End",
+
+  "item.mc_armor_runes.ender_dragon_scales": "Ender Dragon Scales",
+  "item.mc_armor_runes.ender_heart": "Enderheart"
+
+
 }
