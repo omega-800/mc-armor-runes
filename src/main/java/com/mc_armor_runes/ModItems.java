@@ -91,7 +91,7 @@ public class ModItems {
     );
 
     public static final Item CHESTPLATE_OF_END = register(
-            "chestplate_of_end.json",
+            "chestplate_of_end",
             Item::new,
             new Item.Properties().humanoidArmor(EndArmorMaterial.INSTANCE, ArmorType.CHESTPLATE)
                     .durability(ArmorType.CHESTPLATE.getDurability(EndArmorMaterial.BASE_DURABILITY))
