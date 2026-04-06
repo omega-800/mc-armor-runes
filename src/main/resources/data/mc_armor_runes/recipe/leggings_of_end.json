@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:amethyst_shard",
+    "$": "mc_armor_runes:rune_of_end",
+    "%": "minecraft:diamond_leggings",
+    "@": "minecraft:ancient_debris",
+    "&": "mc_armor_runes:ender_dragon_scales"
+  },
+  "pattern": [
+    "#$#",
+    "&%&",
+    " @ "
+  ],
+  "result": {
+    "count": 1,
+    "id": "mc_armor_runes:leggings_of_end"
+    }
+}
+

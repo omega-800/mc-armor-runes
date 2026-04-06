@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "",
+  "category": "block",
   "group": "sigma_log",
   "ingredients": [
     "minecraft:oak_log",
