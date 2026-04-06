@@ -6,10 +6,12 @@
     "$": "minecraft:heart_of_the_sea",
     "?": "minecraft:prismarine_crystals",
     "%": "minecraft:dark_prismarine"
+
   },
   "pattern": [
     "#$#",
     "?%?"
+
 
   ],
   "result": {

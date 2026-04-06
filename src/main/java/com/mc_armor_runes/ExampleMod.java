@@ -27,6 +27,7 @@ public class ExampleMod implements ModInitializer {
         for (ServerPlayer player : server.getPlayerList().getPlayers()) {
             ArmorEffects.applySeaArmorEffects(player);
             ArmorEffects.applyWoodArmorEffects(player);
+            ArmorEffects.applyEndArmorEffects(player);
         }
     }
 }

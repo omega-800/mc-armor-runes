@@ -6,6 +6,7 @@
     "$": "mc_armor_runes:heart_of_the_forest",
     "?": "mc_armor_runes:sigma_log",
     "%": "minecraft:creaking_heart"
+
   },
   "pattern": [
     "#$#",

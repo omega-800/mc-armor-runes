@@ -4,12 +4,14 @@
   "key": {
     "#": "minecraft:amethyst_shard",
     "$": "mc_armor_runes:rune_of_woods",
-    "?": "minecraft:diamond_boots"
+    "?": "minecraft:diamond_boots",
+    "@": "minecraft:ancient_debris"
 
   },
   "pattern": [
     "#$#",
-    " ? "
+    " ? ",
+    " @ "
 
   ],
   "result": {

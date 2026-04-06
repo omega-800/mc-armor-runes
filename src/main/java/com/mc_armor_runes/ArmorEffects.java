@@ -35,7 +35,7 @@ public class ArmorEffects {
             }
             {
                 if (seaArmorPieces >= 1) {
-                    player.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 220, 0, false, false));
+                     player.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 220, 0, false, false));
                 }
                 if (seaArmorPieces >= 2) {
                     player.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 220, 0, false, false));
@@ -43,6 +43,43 @@ public class ArmorEffects {
                 if (seaArmorPieces == 4) {
                     player.addEffect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 220, 0, false, false));
                 }
+            }
+        }
+    }
+
+    public static void applyEndArmorEffects(Player player) {
+
+        int endArmorPieces = 0;
+
+        for (EquipmentSlot slot : EquipmentSlot.values()) {
+            if (slot.getType() == EquipmentSlot.Type.HUMANOID_ARMOR) {
+                ItemStack armorPiece = player.getItemBySlot(slot);
+                if (armorPiece.getItem() == ModItems.CHESTPLATE_OF_END
+                    || armorPiece.getItem() == ModItems.HELMET_OF_END
+                    || armorPiece.getItem() == ModItems.BOOTS_OF_END
+                    || armorPiece.getItem() == ModItems.LEGGINGS_OF_END)
+                    endArmorPieces++;
+
+            }
+            {
+                if (endArmorPieces >= 1) {
+                    player.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 220, 0, true, true));
+                }
+
+                if (endArmorPieces >= 2) {
+                    player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING,220, 0, true, true));
+                    }
+                if (endArmorPieces >= 3) {
+                    player.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 220, 1,true, true));
+                    player.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 220, 1,true, true));
+
+                }
+                if (endArmorPieces >= 4) {
+                    player.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 220, 2, true, true));
+                    player.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 220, 2, true, true));
+
+                }
+
             }
         }
     }
@@ -61,6 +98,8 @@ public class ArmorEffects {
                     woodArmorPieces++;
             }
         }
+
+
 
         Holder<Biome> biome = player.level().getBiome(player.blockPosition()); //Checking Players Position
 
